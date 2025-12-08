@@ -1,0 +1,8 @@
+/home/aurora/Documentos/ED/letras/CMakeFiles/testdiccionario.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/letras.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/cantidad_letras.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/doc_doxygen.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/mrproper.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/zip.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/edit_cache.dir
+/home/aurora/Documentos/ED/letras/CMakeFiles/rebuild_cache.dir
