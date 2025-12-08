@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica Final.-Cifras y Letras "
+OUTPUT_DIRECTORY       = /home/aurora/Documentos/ED/letras/doc_doxygen/
+INPUT                  = /home/aurora/Documentos/ED/letras/.//include /home/aurora/Documentos/ED/letras/.//src /home/aurora/Documentos/ED/letras/.//doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/aurora/Documentos/ED/letras/.//doc
+EXTRACT_PRIVATE	       = NO

@@ -1,0 +1,6 @@
+/home/aurora/Documentos/ED/cifras/CMakeFiles/cifras.dir
+/home/aurora/Documentos/ED/cifras/CMakeFiles/doc_doxygen.dir
+/home/aurora/Documentos/ED/cifras/CMakeFiles/mrproper.dir
+/home/aurora/Documentos/ED/cifras/CMakeFiles/zip.dir
+/home/aurora/Documentos/ED/cifras/CMakeFiles/edit_cache.dir
+/home/aurora/Documentos/ED/cifras/CMakeFiles/rebuild_cache.dir
