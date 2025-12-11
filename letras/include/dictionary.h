@@ -13,6 +13,7 @@
 #include <string>
 #include <iostream>
 #include <set>
+#include <algorithm>
 
 #include <vector>
 using namespace std;
@@ -121,6 +122,13 @@ public:
 			* @doc 		Crea un nuevo objeto de la clase iterator
 		**/
     iterator ();
+
+		/**
+			* @brief  Constuctor con parámetros
+			* @param i, iterador al que apuntar
+			* @doc 		Crea un nuevo objeto de la clase iterator
+	   **/
+	 iterator(const set<string>::iterator &i);
     
 		/**
 			* @brief  Sobrecarga del operador =
@@ -168,13 +176,20 @@ public:
 			* @doc 		Crea un nuevo objeto de la clase const_iterator
 		**/
     const_iterator ();
+
+		/**
+			* @brief  Constuctor con parámetros
+			* @param i, iterador al que apuntar
+			* @doc 		Crea un nuevo objeto de la clase const_iterator
+		**/
+		const_iterator(const set<string>::const_iterator &i);
     
 		/**
 			* @brief  Sobrecarga del operador =
 			* @param	i, iterador al que apuntar
 			* @return	Referencia a si mismo
 		**/
-    const_iterator& operator = (const set<string>::iterator &i);
+    const_iterator& operator = (const set<string>::const_iterator &i);
     
 		/**
 			* @brief	Sobrecarga del operador ==

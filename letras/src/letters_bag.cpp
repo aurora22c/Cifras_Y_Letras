@@ -51,7 +51,7 @@ vector<char> LettersBag::extractLetters(int num){
 }
 
 // Devuelve el tamanio del conjunto de letras
-int LettersBag::size() const {
+unsigned int LettersBag::size() const {
 	return letters.size();
 }
 
@@ -61,11 +61,15 @@ void LettersBag::insert(char letter){
 }          
 
 // Borra una ocurrencia de una letra dada
-void LettersBag::erase(char letter){
+bool LettersBag::erase(char letter){
 	auto it = find(letters.begin(), letters.end(), letter);
 
-	if (it != letters.end())
+	if (it != letters.end()){
 		letters.erase(it);
+		return true;
+	}
+
+	return false;
 }
 
 // Vacia el conjunto de letras
@@ -73,19 +77,117 @@ void LettersBag::clear(){
 	letters.clear();
 }
 
-auto LettersBag::begin(){
-	return letters.begin();
+////////////////////////////////////////////////////////////////////////////////
+
+
+LettersBag :: iterator LettersBag :: begin ()
+{
+	LettersBag::iterator i;
+	i = letters.begin();
+	
+	return i;
 }
 
-auto LettersBag::end(){
-	return letters.end();
+LettersBag :: const_iterator LettersBag :: begin () const
+{
+	LettersBag::const_iterator i;
+	i = letters.cbegin();
+	
+	return i;
 }
 
-auto LettersBag::begin() const{
-	return letters.begin();
+LettersBag :: iterator LettersBag :: end ()
+{
+	LettersBag::iterator i;
+	i = letters.end();
+	
+	return i;
 }
 
-auto LettersBag::end() const{
-	return letters.end();
+LettersBag :: const_iterator LettersBag :: end () const
+{
+	LettersBag::const_iterator i;
+	i = letters.cend();
+	
+	return i;
 }
+
+
+//---------------------- METODOS DE LA CLASE ITERATOR ------------------------//
+
+
+LettersBag :: iterator :: iterator () 
+{}
+
+LettersBag :: iterator :: iterator(const vector<char>::iterator &i) : it(i) 
+{}
+
+LettersBag :: iterator & LettersBag :: iterator :: operator = (const vector<char>::iterator &i)
+{
+	it = i;
+	
+	return *this;
+}
+   
+bool LettersBag :: iterator :: operator == (const iterator &i) const 
+{
+	return it == i.it;
+}
+
+bool LettersBag :: iterator :: operator != (const iterator &i) const 
+{
+	return !(it == i.it);
+}
+
+LettersBag :: iterator & LettersBag :: iterator :: operator ++ () 
+{
+	++it;
+	return *this;
+}
+
+char & LettersBag :: iterator :: operator * () 
+{
+	return *it;
+}
+
+
+
+//------------------- METODOS DE LA CLASE CONST_ITERATOR ---------------------//
+
+
+LettersBag :: const_iterator :: const_iterator () 
+{}
+
+LettersBag :: const_iterator :: const_iterator(const vector<char>::const_iterator &i) : it(i) 
+{}
+
+LettersBag :: const_iterator & LettersBag :: const_iterator :: operator = (const vector<char>::const_iterator &i) 
+{
+	it = i;
+	
+	return *this;
+}
+
+bool LettersBag :: const_iterator :: operator == (const const_iterator &i) const 
+{
+	return it == i.it;
+}
+
+bool LettersBag :: const_iterator :: operator != (const const_iterator &i) const 
+{
+	return !(it == i.it);
+}
+
+LettersBag :: const_iterator & LettersBag :: const_iterator :: operator ++ () 
+{
+	++it;
+	return *this;
+}
+
+const char & LettersBag :: const_iterator :: operator * () 
+{
+	return *it;
+}
+
+
 

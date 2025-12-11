@@ -6,10 +6,8 @@
 *		      Andrés López Baena
 */
 
-#include <algorithm>
 #include "dictionary.h"
 
-using namespace std;
 
 Dictionary :: Dictionary () 
 {}
@@ -92,7 +90,14 @@ vector<string> Dictionary :: getWordsLength (int length)
 	return w;
 }
 
+
+//---------------------- METODOS DE LA CLASE ITERATOR ------------------------//
+
+
 Dictionary :: iterator :: iterator () 
+{}
+
+Dictionary :: iterator :: iterator(const set<string>::iterator &i) : it(i) 
 {}
 
 Dictionary :: iterator & Dictionary :: iterator :: operator = (const set<string>::iterator &i)
@@ -118,15 +123,22 @@ Dictionary :: iterator & Dictionary :: iterator :: operator ++ ()
 	return *this;
 }
 
-const string & Dictionary :: iterator :: operator * () 
+string & Dictionary :: iterator :: operator * () 
 {
 	return *it;
 }
 
+
+//------------------- METODOS DE LA CLASE CONST_ITERATOR ---------------------//
+
+
 Dictionary :: const_iterator :: const_iterator () 
 {}
 
-Dictionary :: const_iterator & Dictionary :: const_iterator :: operator = (const set<string>::iterator &i) 
+Dictionary :: const_iterator :: const_iterator(const set<string>::const_iterator &i) : it(i) 
+{}
+
+Dictionary :: const_iterator & Dictionary :: const_iterator :: operator = (const set<string>::const_iterator &i) 
 {
 	it = i;
 	
