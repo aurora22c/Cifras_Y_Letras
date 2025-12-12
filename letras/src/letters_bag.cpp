@@ -1,3 +1,5 @@
+#include <ctime>
+
 #include "letters_bag.h"
 
 LettersBag::LettersBag(){}
@@ -19,9 +21,10 @@ char LettersBag::extractLetter(){
 	if (!letters.empty()){
 
 		// Generamos un numero aleatorio
-		random_device rd;          				 // fuente de aleatoriedad
-		mt19937 gen(rd());         				 // generador
-		uniform_int_distribution<int> distrib(0, letters.size() - 1); 
+		srand ( time(0) );
+		
+		// Generamos un indice aleatorio que sera la letra a extraer
+    	int pos = rand () % (letters.size()); 
 
 		// Generamos un indice aleatorio que sera la letra a extraer
     	int pos = distrib(gen);
@@ -188,6 +191,7 @@ const char & LettersBag :: const_iterator :: operator * ()
 {
 	return *it;
 }
+
 
 
 
