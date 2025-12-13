@@ -1,3 +1,12 @@
+ /* ***************************************** */
+ /**
+ * @file   letters_bag.h
+ * @brief  Archivo de definición del TDA letters_bag
+ * @author Aurora Casanova García
+ *		     Andrés López Baena
+ */
+
+
 #ifndef __LETTERS_BAG_H__
 #define __LETTERS_BAG_H__
 
@@ -135,6 +144,12 @@ public:
 	  * @doc 		Crea un nuevo objeto de la clase LettersBag
 	**/
 	LettersBag();
+
+	/**
+	  * @brief  Destructor
+	  * @doc 		Destruye objeto de la clase LettersBag
+	**/
+	~LettersBag ();
 
 	/**
 		* @brief  Constuctor con parámetros

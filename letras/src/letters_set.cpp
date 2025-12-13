@@ -2,6 +2,8 @@
 
 LettersSet :: LettersSet(){}
 
+LettersSet :: ~LettersSet(){}
+
 LettersSet :: LettersSet(const string & fichero){
 	ifstream fi(fichero);
 
@@ -27,6 +29,19 @@ istream & operator >> (istream & is, LettersSet & lettersSet){
 }
 
 
+int LettersSet :: score(const string & w) const{
+	int puntos = 0;
+	
+	// Recorremos la palabra
+	for (int i = 0; i < w.size(); i++){
+		auto it = charSet.find(w[i]); 	// Encontramos la letra en el map
+		
+		if (it != charSet.end())		
+			puntos += it->second.score;
+	}
+
+	return puntos;
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 

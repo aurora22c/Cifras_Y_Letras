@@ -1,3 +1,12 @@
+ /* ***************************************** */
+ /**
+ * @file   operations.h
+ * @brief  Archivo de definición del TDA operations
+ * @author Aurora Casanova García
+ *		     Andrés López Baena
+ */
+
+
 #ifndef __OPERATIONS__
 #define __OPERATIONS__
 

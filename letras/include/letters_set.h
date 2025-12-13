@@ -1,3 +1,12 @@
+ /* ***************************************** */
+ /**
+ * @file   letters_set.h
+ * @brief  Archivo de definición del TDA letters_set
+ * @author Aurora Casanova García
+ *		     Andrés López Baena
+ */
+
+
 #ifndef __LETTER_SET_H__
 #define __LETTER_SET_H__
 
@@ -161,6 +170,12 @@ class iterator {
 	**/
 	LettersSet();
 
+	/**
+	  * @brief  Destructor
+	  * @doc 		Destruye objeto de la clase LettersSet
+	**/
+	~LettersSet ();
+
 
 	/**
 		* @brief  Constuctor con parámetros
@@ -180,6 +195,15 @@ class iterator {
 	  *						que hay en is
 	**/
 	friend istream & operator >> (istream & is, LettersSet & lettersSet);
+
+	
+	/**
+	  * @brief  Calcula la puntuación total de una palabra
+	  * @param	w, palabra que se quiere calcular la puntuación
+	  * @return	Puntuación total de la palabra
+	**/
+	int score(const string & w) const;
+
 
 	/**
 	  * @brief  Inicio

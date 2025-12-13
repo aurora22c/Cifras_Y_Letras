@@ -4,6 +4,8 @@
 
 LettersBag::LettersBag(){}
 
+LettersBag :: ~LettersBag(){}
+
 LettersBag::LettersBag(const LettersSet & letterSet){
 	// Recorremos el letterSet
 	for (auto it = letterSet.begin(); it != letterSet.end(); ++it){
