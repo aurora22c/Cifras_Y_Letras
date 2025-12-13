@@ -15,14 +15,13 @@ LettersSet :: LettersSet(const string & fichero){
 istream & operator >> (istream & is, LettersSet & lettersSet){
 	string cabecera;
 
-	is >> cabecera;
+	getline(is,cabecera);
 
 	char letra;
 	int cantidad, puntos;
 
 	while (is >> letra >> cantidad >> puntos){
-		LetterInfo info(cantidad, puntos);
-		lettersSet.insert(letra, info);
+		lettersSet.insert(letra, LetterInfo(cantidad, puntos));
 	}
 
 	return is;
@@ -44,6 +43,14 @@ int LettersSet :: score(const string & w) const{
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+
+
+pair<LettersSet::iterator, bool> LettersSet :: insert(char c, const LetterInfo & info){
+
+	auto resultado = charSet.insert(pair<char, LetterInfo>(c, info));
+	
+	return { LettersSet::iterator(resultado.first), resultado.second };
+}
 
 
 LettersSet :: iterator LettersSet :: begin ()

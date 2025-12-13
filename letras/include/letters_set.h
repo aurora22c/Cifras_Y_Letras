@@ -204,6 +204,15 @@ class iterator {
 	**/
 	int score(const string & w) const;
 
+	/**
+	  * @brief  Inserta una letra con su información 
+	  * @param	   c, letra a insertar
+	  * @param  info, información de la letra (repetitions y score)
+	  * @return	Par formado por el iterador al elemento insertado y un 
+	  *			bool que indica si se insertó (true) o ya existía (false)
+	**/
+	pair<LettersSet::iterator, bool> insert(char c, const LetterInfo & info);
+
 
 	/**
 	  * @brief  Inicio

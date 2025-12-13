@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 		cout << endl;
 		cout << "Las letras son: ";
 	
-		for (int i = 0; i < num_letras; i++)
+		for (int i = 0; i < letras.size(); i++)
 			cout << letras[i] << "       ";
 		
 		cout << endl;

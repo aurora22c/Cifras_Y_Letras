@@ -123,7 +123,7 @@ Dictionary :: iterator & Dictionary :: iterator :: operator ++ ()
 	return *this;
 }
 
-string & Dictionary :: iterator :: operator * () 
+const string & Dictionary :: iterator :: operator * () 
 {
 	return *it;
 }

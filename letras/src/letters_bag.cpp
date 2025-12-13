@@ -21,15 +21,9 @@ char LettersBag::extractLetter(){
 	char letter = '\0';
 
 	if (!letters.empty()){
-
-		// Generamos un numero aleatorio
-		srand ( time(0) );
 		
 		// Generamos un indice aleatorio que sera la letra a extraer
     	int pos = rand () % (letters.size()); 
-
-		// Generamos un indice aleatorio que sera la letra a extraer
-    	int pos = distrib(gen);
 
 		// Sacamos la letra con ese indice
 		letter = letters[pos];
@@ -150,7 +144,7 @@ LettersBag :: iterator & LettersBag :: iterator :: operator ++ ()
 	return *this;
 }
 
-char & LettersBag :: iterator :: operator * () 
+const char & LettersBag :: iterator :: operator * () 
 {
 	return *it;
 }

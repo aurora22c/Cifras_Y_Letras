@@ -20,7 +20,7 @@ vector<string> Solver :: getSolutions (const vector<char> & available_letters, b
 	// tratamos todas la letras de está forma y si comparamos no 
 	// funcionaría
 	for (int i = 0; i < available_letters.size(); i++)
-		letras[i] = tolower( available_letters[i] );
+		letras.push_back( tolower( available_letters[i] ) ) ;
 	
 	if (score_game)
 		return getSolutionsScore(letras);
