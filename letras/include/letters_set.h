@@ -53,28 +53,28 @@ class iterator {
 
 		/**
 			* @brief  Constuctor con parámetros
-			* @param i, iterador al que apuntar
+			* @param i iterador al que apuntar
 			* @doc 		Crea un nuevo objeto de la clase iterator
 		**/
 		iterator(const map<char, LetterInfo>::iterator &i);
 
 		/**
 			* @brief  Sobrecarga del operador =
-			* @param	i, iterador al que apuntar
+			* @param	i iterador al que apuntar
 			* @return	Referencia a si mismo
 		**/
 		iterator& operator = (const map<char, LetterInfo>::iterator &i);
 
 		/**
 			* @brief	Sobrecarga del operador ==
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son iguales
 		**/
 		bool operator == (const iterator &i) const;
 
 		/**
 			* @brief	Sobrecarga del operador !=
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son diferentes
 		**/
 		bool operator != (const iterator &i) const;
@@ -115,28 +115,28 @@ class iterator {
 
 		/**
 			* @brief  Constuctor con parámetros
-			* @param i, iterador al que apuntar
+			* @param i iterador al que apuntar
 			* @doc 		Crea un nuevo objeto de la clase const_iterator
 		**/
 		const_iterator(const map<char, LetterInfo>::const_iterator &i);
 
 		/**
 			* @brief  Sobrecarga del operador =
-			* @param	i, iterador al que apuntar
+			* @param	i iterador al que apuntar
 			* @return	Referencia a si mismo
 		**/
 		const_iterator& operator = (const map<char, LetterInfo>::const_iterator &i);
 
 		/**
 			* @brief	Sobrecarga del operador ==
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son iguales
 		**/
 		bool operator == (const const_iterator &i) const;
 
 		/**
 			* @brief	Sobrecarga del operador !=
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son diferentes
 		**/
 		bool operator != (const const_iterator &i) const;
@@ -178,7 +178,7 @@ class iterator {
 
 	/**
 		* @brief  Constuctor con parámetros
-		* @param  fichero, fichero donde contiene toda la información
+		* @param  fichero fichero donde contiene toda la información
 		*				sobre la creación de un LettersSet
 		* @doc 		Crea un nuevo objeto de la clase LettersSet
 	**/
@@ -187,8 +187,8 @@ class iterator {
 
 	/**
 	  * @brief  Sobrecarga del operador >>
-	  * @param	is, referencia del flujo de entrada
-	  *			lettersSet, referencia del objeto LettersSet 
+	  * @param	is referencia del flujo de entrada
+	  * @param  lettersSet referencia del objeto LettersSet 
 	  * @return	El flujo de entrada
 	  * @doc 		Inicializa el LettersSet con los elementos
 	  *						que hay en is
@@ -198,15 +198,15 @@ class iterator {
 	
 	/**
 	  * @brief  Calcula la puntuación total de una palabra
-	  * @param	w, palabra que se quiere calcular la puntuación
+	  * @param	w palabra que se quiere calcular la puntuación
 	  * @return	Puntuación total de la palabra
 	**/
 	int score(const string & w) const;
 
 	/**
 	  * @brief  Inserta una letra con su información 
-	  * @param	   c, letra a insertar
-	  * @param  info, información de la letra (repetitions y score)
+	  * @param	   c letra a insertar
+	  * @param  info información de la letra (repetitions y score)
 	  * @return	Par formado por el iterador al elemento insertado y un 
 	  *			bool que indica si se insertó (true) o ya existía (false)
 	**/

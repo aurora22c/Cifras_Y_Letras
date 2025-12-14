@@ -50,7 +50,7 @@ Constuctor con parámetros.
 
 
 \begin{DoxyParams}{Parameters}
-{\em fichero,fichero} & donde contiene toda la información sobre la creación de un \doxylink{classLettersSet}{Letters\+Set} @doc Crea un nuevo objeto de la clase \doxylink{classLettersSet}{Letters\+Set} \\
+{\em fichero} & fichero donde contiene toda la información sobre la creación de un \doxylink{classLettersSet}{Letters\+Set} @doc Crea un nuevo objeto de la clase \doxylink{classLettersSet}{Letters\+Set} \\
 \hline
 \end{DoxyParams}
 
@@ -120,9 +120,9 @@ Inserta una letra con su información.
 
 
 \begin{DoxyParams}{Parameters}
-{\em c,letra} & a insertar \\
+{\em c} & letra a insertar \\
 \hline
-{\em info,información} & de la letra (repetitions y score) \\
+{\em info} & información de la letra (repetitions y score) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -140,7 +140,7 @@ Calcula la puntuación total de una palabra.
 
 
 \begin{DoxyParams}{Parameters}
-{\em w,palabra} & que se quiere calcular la puntuación \\
+{\em w} & palabra que se quiere calcular la puntuación \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -161,7 +161,9 @@ Sobrecarga del operador \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}
 
 
 \begin{DoxyParams}{Parameters}
-{\em is,referencia} & del flujo de entrada letters\+Set, referencia del objeto \doxylink{classLettersSet}{Letters\+Set} \\
+{\em is} & referencia del flujo de entrada \\
+\hline
+{\em letters\+Set} & referencia del objeto \doxylink{classLettersSet}{Letters\+Set} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

@@ -41,28 +41,28 @@ public:
 
 		/**
 			* @brief  Constuctor con parámetros
-			* @param i, iterador al que apuntar
+			* @param i iterador al que apuntar
 			* @doc 		Crea un nuevo objeto de la clase iterator
 		**/
 		iterator(const vector<char>::iterator &i);
 
 		/**
 			* @brief  Sobrecarga del operador =
-			* @param	i, iterador al que apuntar
+			* @param	i iterador al que apuntar
 			* @return	Referencia a si mismo
 		**/
 		iterator& operator = (const vector<char>::iterator &i);
 
 		/**
 			* @brief	Sobrecarga del operador ==
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son iguales
 		**/
 		bool operator == (const iterator &i) const;
 
 		/**
 			* @brief	Sobrecarga del operador !=
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son diferentes
 		**/
 		bool operator != (const iterator &i) const;
@@ -97,28 +97,28 @@ public:
 
 		/**
 			* @brief  Constuctor con parámetros
-			* @param i, iterador al que apuntar
+			* @param i iterador al que apuntar
 			* @doc 		Crea un nuevo objeto de la clase const_iterator
 		**/
 		const_iterator(const vector<char>::const_iterator &i);
 
 		/**
 			* @brief  Sobrecarga del operador =
-			* @param	i, iterador al que apuntar
+			* @param	i iterador al que apuntar
 			* @return	Referencia a si mismo
 		**/
 		const_iterator& operator = (const vector<char>::const_iterator &i);
 
 		/**
 			* @brief	Sobrecarga del operador ==
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son iguales
 		**/
 		bool operator == (const const_iterator &i) const;
 
 		/**
 			* @brief	Sobrecarga del operador !=
-			* @param	i, referenecia al elemento a comparar
+			* @param	i referenecia al elemento a comparar
 			* @return	true si los dos objetos son diferentes
 		**/
 		bool operator != (const const_iterator &i) const;
@@ -153,7 +153,7 @@ public:
 
 	/**
 		* @brief  Constuctor con parámetros
-		* @param	letterSet, objeto donde contiene todas las letras
+		* @param	letterSet objeto donde contiene todas las letras
 		* @doc 	Crea un nuevo objeto de la clase LettersBag
 	**/
 	LettersBag(const LettersSet & letterSet);
@@ -168,7 +168,7 @@ public:
 
 	/**
 		* @brief	Saca el conjunto de letras con el que jugar
-		* @param	num, nº de letras que se quiere extraer
+		* @param	num nº de letras que se quiere extraer
 		* @return	conjunto de letras aleatorias con las que se va a jugar
 	**/
 	vector<char> extractLetters(int num);
@@ -182,13 +182,13 @@ public:
 
 	/**
 	  * @brief  Inserta un elemento en el conjunto
-	  * @param	letter, letra a insertar
+	  * @param	letter letra a insertar
 	**/
 	void insert(char letter);
 
 	/**
 	  * @brief  Eliminia un elemento
-	  * @param	letter, letra que se va a eliminar
+	  * @param	letter letra que se va a eliminar
 	  * @return true si el elemento ha sido eliminado
 	**/
 	bool erase(char letter);

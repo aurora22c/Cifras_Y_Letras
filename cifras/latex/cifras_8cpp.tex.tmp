@@ -1,0 +1,117 @@
+\doxysection{src/cifras.cpp File Reference}
+\hypertarget{cifras_8cpp}{}\label{cifras_8cpp}\index{src/cifras.cpp@{src/cifras.cpp}}
+
+
+Archivo de prueba final.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include "{}cifras.\+h"{}}\newline
+Include dependency graph for cifras.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{cifras_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{cifras_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int {\bfseries main} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\item 
+multiset$<$ int $>$ \mbox{\hyperlink{cifras_8cpp_a093bd9399983f76f1bbc295de7f3be90}{digits\+Bag}} ()
+\begin{DoxyCompactList}\small\item\em Rellena un vector con elementos de C. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cifras_8cpp_a269a62ca940809594d7c60490a385447}{Cifras}} (multiset$<$ int $>$ S, int objetivo, \mbox{\hyperlink{structOperations}{Operations}} actual, \mbox{\hyperlink{structOperations}{Operations}} \&best)
+\begin{DoxyCompactList}\small\item\em Busca la mejor solución para lograr un número. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{structOperations}{Operations}} $>$ \mbox{\hyperlink{cifras_8cpp_ab315f34ec7cb8e58b10f9fb59cbe66dd}{Genera\+Operaciones}} (\mbox{\hyperlink{structOperations}{Operations}} actual, int n)
+\begin{DoxyCompactList}\small\item\em Calcula las soluciones a +, -\/, \texorpdfstring{$\ast$}{*}, /. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cifras_8cpp_aaf723d608ccc76b47e9c0bc2bd8f7e00}{Analiza\+Respuesta}} (string operaciones, multiset$<$ int $>$ S)
+\begin{DoxyCompactList}\small\item\em Analiza una respuesta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Archivo de prueba final. 
+
+\begin{DoxyAuthor}{Author}
+Aurora Casanova García 
+
+Andrés López Baena 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cifras_8cpp_aaf723d608ccc76b47e9c0bc2bd8f7e00}\label{cifras_8cpp_aaf723d608ccc76b47e9c0bc2bd8f7e00} 
+\index{cifras.cpp@{cifras.cpp}!AnalizaRespuesta@{AnalizaRespuesta}}
+\index{AnalizaRespuesta@{AnalizaRespuesta}!cifras.cpp@{cifras.cpp}}
+\doxysubsubsection{\texorpdfstring{AnalizaRespuesta()}{AnalizaRespuesta()}}
+{\footnotesize\ttfamily int Analiza\+Respuesta (\begin{DoxyParamCaption}\item[{string}]{operaciones,  }\item[{multiset$<$ int $>$}]{S }\end{DoxyParamCaption})}
+
+
+
+Analiza una respuesta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operaciones} & solución \\
+\hline
+{\em S} & números disponibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resultado de las operaciones 
+\end{DoxyReturn}
+\Hypertarget{cifras_8cpp_a269a62ca940809594d7c60490a385447}\label{cifras_8cpp_a269a62ca940809594d7c60490a385447} 
+\index{cifras.cpp@{cifras.cpp}!Cifras@{Cifras}}
+\index{Cifras@{Cifras}!cifras.cpp@{cifras.cpp}}
+\doxysubsubsection{\texorpdfstring{Cifras()}{Cifras()}}
+{\footnotesize\ttfamily void Cifras (\begin{DoxyParamCaption}\item[{multiset$<$ int $>$}]{S,  }\item[{int}]{objetivo,  }\item[{\mbox{\hyperlink{structOperations}{Operations}}}]{actual,  }\item[{\mbox{\hyperlink{structOperations}{Operations}} \&}]{best }\end{DoxyParamCaption})}
+
+
+
+Busca la mejor solución para lograr un número. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & números disponibles \\
+\hline
+{\em objetivo} & número que queremos conseguir \\
+\hline
+{\em actual} & operaciones actuales \\
+\hline
+{\em best} & mejor solución hasta el momento \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cifras_8cpp_a093bd9399983f76f1bbc295de7f3be90}\label{cifras_8cpp_a093bd9399983f76f1bbc295de7f3be90} 
+\index{cifras.cpp@{cifras.cpp}!digitsBag@{digitsBag}}
+\index{digitsBag@{digitsBag}!cifras.cpp@{cifras.cpp}}
+\doxysubsubsection{\texorpdfstring{digitsBag()}{digitsBag()}}
+{\footnotesize\ttfamily multiset$<$ int $>$ digits\+Bag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rellena un vector con elementos de C. 
+
+\begin{DoxyReturn}{Returns}
+Vector con elementos aleatorios de C 
+\end{DoxyReturn}
+\Hypertarget{cifras_8cpp_ab315f34ec7cb8e58b10f9fb59cbe66dd}\label{cifras_8cpp_ab315f34ec7cb8e58b10f9fb59cbe66dd} 
+\index{cifras.cpp@{cifras.cpp}!GeneraOperaciones@{GeneraOperaciones}}
+\index{GeneraOperaciones@{GeneraOperaciones}!cifras.cpp@{cifras.cpp}}
+\doxysubsubsection{\texorpdfstring{GeneraOperaciones()}{GeneraOperaciones()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structOperations}{Operations}} $>$ Genera\+Operaciones (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structOperations}{Operations}}}]{actual,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Calcula las soluciones a +, -\/, \texorpdfstring{$\ast$}{*}, /. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actual} & operaciones actuales \\
+\hline
+{\em n} & número con el que operar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Todas las soluciones posibles 
+\end{DoxyReturn}

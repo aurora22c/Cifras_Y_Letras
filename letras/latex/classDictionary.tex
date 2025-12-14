@@ -134,7 +134,7 @@ Eliminia un elemento.
 
 
 \begin{DoxyParams}{Parameters}
-{\em val,referencia} & del elemento que de debe eliminar \\
+{\em val} & referencia del elemento que de debe eliminar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -152,7 +152,7 @@ Busca un elemento.
 
 
 \begin{DoxyParams}{Parameters}
-{\em val,referencia} & del elemento que se debe buscar \\
+{\em val} & referencia del elemento que se debe buscar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -170,7 +170,7 @@ Busca un elemento en el conjunto.
 
 
 \begin{DoxyParams}{Parameters}
-{\em w,palabra} & a buscar \\
+{\em w} & palabra a buscar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -188,7 +188,7 @@ Cuenta un caracter.
 
 
 \begin{DoxyParams}{Parameters}
-{\em c,caracter} & que se debe contar \\
+{\em c} & caracter que se debe contar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -219,7 +219,7 @@ Busca parabras de una longitud concreta.
 
 
 \begin{DoxyParams}{Parameters}
-{\em length,longitud} & de las palabras a buscar \\
+{\em length} & longitud de las palabras a buscar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -237,7 +237,7 @@ Inserta un elemento en el conjunto.
 
 
 \begin{DoxyParams}{Parameters}
-{\em val,palabra} & a insertar \\
+{\em val} & palabra a insertar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -255,7 +255,7 @@ Busca el rango del elemento.
 
 
 \begin{DoxyParams}{Parameters}
-{\em val,palabra} & a buscar el rango \\
+{\em val} & palabra a buscar el rango \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -289,7 +289,9 @@ Sobrecarga del operador \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em os,referencia} & del flujo de salida dic, referencia del objeto dicctionary \\
+{\em os} & referencia del flujo de salida \\
+\hline
+{\em dic} & referencia del objeto dicctionary \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -307,7 +309,9 @@ Sobrecarga del operador \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}
 
 
 \begin{DoxyParams}{Parameters}
-{\em is,referencia} & del flujo de entrada dic, referencia del objeto dicctionary \\
+{\em is} & referencia del flujo de entrada \\
+\hline
+{\em dic} & referencia del objeto dicctionary \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
