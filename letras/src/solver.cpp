@@ -3,7 +3,7 @@
 * @file   solver.cpp
 * @brief  Archivo de implementación del TDA Solver
 * @author Aurora Casanova García
-*		     	Andrés López Baena
+*	  Andrés López Baena
 */
 
 #include <cctype>

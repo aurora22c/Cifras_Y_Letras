@@ -1,0 +1,27 @@
+\doxysection{src/dictionary.cpp File Reference}
+\hypertarget{dictionary_8cpp}{}\label{dictionary_8cpp}\index{src/dictionary.cpp@{src/dictionary.cpp}}
+
+
+Archivo de implementación del TDA dictionary.  
+
+
+{\ttfamily \#include "{}dictionary.\+h"{}}\newline
+Include dependency graph for dictionary.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{dictionary_8cpp_a045316b2a6550b776d5b2cb21824827b}\label{dictionary_8cpp_a045316b2a6550b776d5b2cb21824827b} 
+istream \& {\bfseries operator$>$$>$} (istream \&is, Dictionary \&dic)
+\item 
+\Hypertarget{dictionary_8cpp_a558ee41aec5fad2f9ba2071c39cef580}\label{dictionary_8cpp_a558ee41aec5fad2f9ba2071c39cef580} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const Dictionary \&dic)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Archivo de implementación del TDA dictionary. 
+
+\begin{DoxyAuthor}{Author}
+Aurora Casanova García Andrés López Baena 
+\end{DoxyAuthor}

@@ -1,3 +1,11 @@
+/* ***************************************** */
+/**
+* @file   letters_bag.cpp
+* @brief  Archivo de implementación del TDA LettersBag
+* @author Aurora Casanova García
+*	  Andrés López Baena
+*/
+
 #include <ctime>
 
 #include "letters_bag.h"

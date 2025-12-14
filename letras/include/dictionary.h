@@ -1,10 +1,10 @@
- /* ***************************************** */
- /**
- * @file   dictionary.h
- * @brief  Archivo de definición del TDA dictionary
- * @author Aurora Casanova García
- *		     Andrés López Baena
- */
+/* ***************************************** */
+/**
+* @file   dictionary.h
+* @brief  Archivo de definición del TDA Dictionary
+* @author Aurora Casanova García
+*         Andrés López Baena
+*/
 
 #ifndef DICTIONARY_H
 #define DICTIONARY_H

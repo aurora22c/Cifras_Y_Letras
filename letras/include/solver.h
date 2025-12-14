@@ -1,9 +1,9 @@
  /* ***************************************** */
  /**
  * @file   solver.h
- * @brief  Archivo de definición del TDA solver
+ * @brief  Archivo de definición del TDA Solver
  * @author Aurora Casanova García
- *		     Andrés López Baena
+ *	   Andrés López Baena
  */
 
 #ifndef __SOLVER_H__

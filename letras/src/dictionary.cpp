@@ -1,9 +1,9 @@
 /* ***************************************** */
 /**
 * @file   dictionary.cpp
-* @brief  Archivo de implementación del TDA dictionary
+* @brief  Archivo de implementación del TDA Dictionary
 * @author Aurora Casanova García
-*		      Andrés López Baena
+*	  Andrés López Baena
 */
 
 #include "dictionary.h"

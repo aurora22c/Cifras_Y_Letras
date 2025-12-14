@@ -1,11 +1,10 @@
- /* ***************************************** */
- /**
- * @file   letters_set.h
- * @brief  Archivo de definición del TDA letters_set
- * @author Aurora Casanova García
- *		     Andrés López Baena
- */
-
+/* ***************************************** */
+/**
+* @file   letters_set.cpp
+* @brief  Archivo de definición del TDA LettersSet
+* @author Aurora Casanova García
+*	  Andrés López Baena
+*/
 
 #ifndef __LETTER_SET_H__
 #define __LETTER_SET_H__
