@@ -76,6 +76,18 @@ int main(int argc, char *argv[])
 
 	// Iniciamos el juego
 	while (continuar == 'S' || continuar == 's'){
+
+		// Si juega en modo puntuación, mostramos la puntuación de cada letra 
+		if (modo_juego == "P"){
+			cout << "******Puntuaciones Letras******" << endl;
+			cout << "Letras\tPuntos" << endl;
+
+			for (auto it = letters_set.begin(); it != letters_set.end(); ++it)
+				cout << it->first << "\t" << it->second.score << endl;
+				
+			cout << endl;
+			
+		}
 		
 		// Extraemos las letras con las que se va a jugar
 		vector<char> letras = letters_bag.extractLetters(num_letras);
