@@ -78,14 +78,13 @@ int main(int argc, char *argv[])
 	// Creamos el objeto que nos dará las soluciones
 	Solver solver(diccionario, letters_set);
 
+	// Iniciamos el generador aleatorio
+	srand(time(nullptr));
+
 	char continuar;
 	
 	// Iniciamos el juego
 	do {
-		
-		// Extraemos las letras con las que se va a jugar
-		vector<char> letras = letters_bag.extractLetters(num_letras);
-
 
 		// Mostramos las letras 
 		cout << endl
@@ -104,8 +103,11 @@ int main(int argc, char *argv[])
 			
 		}
     
+		
+		// Extraemos las letras con las que se va a jugar
+		vector<char> letras = letters_bag.extractLetters(num_letras);
      
-   	cout << "Las letras que puedes usar son: " << endl;
+   	cout << "Las letras que puedes usar son: ";
   
 	
 		for (int i = 0; i < letras.size(); i++)
@@ -117,7 +119,7 @@ int main(int argc, char *argv[])
 		// Pedimos la solución del usuario
 		string solucion_usuario;
 
-		cout << endl << "Dime tu solución" << endl;
+		cout << endl << "Dime tu solución: ";
 
 		cin >> solucion_usuario;
 
@@ -135,8 +137,8 @@ int main(int argc, char *argv[])
 		} 
 
 		// Le mostramos los puntos de su solucion
-		cout << endl
-				 << "Tu puntuación es " << puntuacion_usuario << endl;
+		cout << endl;
+		cout << "Tu puntuación es " << puntuacion_usuario << endl;
 
 		
 		// Calculamos las soluciones óptimas
@@ -162,7 +164,7 @@ int main(int argc, char *argv[])
 		for (int i = 0; i < soluciones.size(); i++)
 			cout << soluciones[i] << " -> " << puntuacion_max << endl;
 		
-		cout << endl << "La mejor solución es" << endl;
+		cout << endl << "La mejor solución es ";
 		
 		if (puntuacion_usuario >= puntuacion_max)
 			cout << solucion_usuario << endl;
