@@ -1,0 +1,142 @@
+\doxysection{Letters\+Set\+::iterator Class Reference}
+\hypertarget{classLettersSet_1_1iterator}{}\label{classLettersSet_1_1iterator}\index{LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLettersSet_1_1iterator_af4b6ee85ba432c9fbe528b04be85ea20}\label{classLettersSet_1_1iterator_af4b6ee85ba432c9fbe528b04be85ea20} 
+{\bfseries iterator} ()
+\begin{DoxyCompactList}\small\item\em Constuctor sin parámetros @doc Crea un nuevo objeto de la clase iterator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLettersSet_1_1iterator_a828575f727429e851aa6b20c93960634}{iterator}} (const map$<$ char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$\+::iterator \&i)
+\begin{DoxyCompactList}\small\item\em Constuctor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLettersSet_1_1iterator}{iterator}} \& \mbox{\hyperlink{classLettersSet_1_1iterator_a9a62faa2a22dc379da41cdcd2f398dcb}{operator=}} (const map$<$ char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$\mbox{\hyperlink{classLettersSet_1_1iterator_af4b6ee85ba432c9fbe528b04be85ea20}{\+::iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador =. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLettersSet_1_1iterator_aa1a82484156b5a324b14bef5f94c8401}{operator==}} (const \mbox{\hyperlink{classLettersSet_1_1iterator}{iterator}} \&i) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador ==. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLettersSet_1_1iterator_ae1740a4c7e3afc04181beda5b4656940}{operator!=}} (const \mbox{\hyperlink{classLettersSet_1_1iterator}{iterator}} \&i) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador !=. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLettersSet_1_1iterator}{iterator}} \& \mbox{\hyperlink{classLettersSet_1_1iterator_acce6de6c29f554c3bf83c7b961147221}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador ++. \end{DoxyCompactList}\item 
+pair$<$ const char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$ \& \mbox{\hyperlink{classLettersSet_1_1iterator_ab918b9b5abc2253823d61d1482e40595}{operator\texorpdfstring{$\ast$}{*}}} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$\ast$}{*}. \end{DoxyCompactList}\item 
+pair$<$ const char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLettersSet_1_1iterator_a23a46313bcf7dd5cb0918afadc5f6bf6}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador -\/\texorpdfstring{$>$}{>} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLettersSet_1_1iterator_a828575f727429e851aa6b20c93960634}\label{classLettersSet_1_1iterator_a828575f727429e851aa6b20c93960634} 
+\index{LettersSet::iterator@{LettersSet::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{iterator()}{iterator()}}
+{\footnotesize\ttfamily Letters\+Set\+::iterator\+::iterator (\begin{DoxyParamCaption}\item[{const map$<$ char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$\+::iterator \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Constuctor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i,iterador} & al que apuntar @doc Crea un nuevo objeto de la clase iterator \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLettersSet_1_1iterator_ae1740a4c7e3afc04181beda5b4656940}\label{classLettersSet_1_1iterator_ae1740a4c7e3afc04181beda5b4656940} 
+\index{LettersSet::iterator@{LettersSet::iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Letters\+Set\+::iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLettersSet_1_1iterator}{iterator}} \&}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador !=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i,referenecia} & al elemento a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si los dos objetos son diferentes 
+\end{DoxyReturn}
+\Hypertarget{classLettersSet_1_1iterator_ab918b9b5abc2253823d61d1482e40595}\label{classLettersSet_1_1iterator_ab918b9b5abc2253823d61d1482e40595} 
+\index{LettersSet::iterator@{LettersSet::iterator}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily pair$<$ const char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$ \& Letters\+Set\+::iterator\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador \texorpdfstring{$\ast$}{*}. 
+
+\begin{DoxyReturn}{Returns}
+Elemento al que referencia el puntero 
+\end{DoxyReturn}
+\Hypertarget{classLettersSet_1_1iterator_acce6de6c29f554c3bf83c7b961147221}\label{classLettersSet_1_1iterator_acce6de6c29f554c3bf83c7b961147221} 
+\index{LettersSet::iterator@{LettersSet::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLettersSet_1_1iterator}{Letters\+Set\+::iterator}} \& Letters\+Set\+::iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador ++. 
+
+\begin{DoxyReturn}{Returns}
+Referencia a si mismo @doc Aumenta en 1 la posición del puntero 
+\end{DoxyReturn}
+\Hypertarget{classLettersSet_1_1iterator_a23a46313bcf7dd5cb0918afadc5f6bf6}\label{classLettersSet_1_1iterator_a23a46313bcf7dd5cb0918afadc5f6bf6} 
+\index{LettersSet::iterator@{LettersSet::iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily pair$<$ const char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$ \texorpdfstring{$\ast$}{*} Letters\+Set\+::iterator\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador -\/\texorpdfstring{$>$}{>} 
+
+\begin{DoxyReturn}{Returns}
+Puntero al par (clave, valor) al que apunta el iterador 
+\end{DoxyReturn}
+\Hypertarget{classLettersSet_1_1iterator_a9a62faa2a22dc379da41cdcd2f398dcb}\label{classLettersSet_1_1iterator_a9a62faa2a22dc379da41cdcd2f398dcb} 
+\index{LettersSet::iterator@{LettersSet::iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLettersSet_1_1iterator}{Letters\+Set\+::iterator}} \& Letters\+Set\+::iterator\+::operator= (\begin{DoxyParamCaption}\item[{const map$<$ char, \mbox{\hyperlink{structLetterInfo}{Letter\+Info}} $>$\mbox{\hyperlink{classLettersSet_1_1iterator_af4b6ee85ba432c9fbe528b04be85ea20}{\+::iterator}} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i,iterador} & al que apuntar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia a si mismo 
+\end{DoxyReturn}
+\Hypertarget{classLettersSet_1_1iterator_aa1a82484156b5a324b14bef5f94c8401}\label{classLettersSet_1_1iterator_aa1a82484156b5a324b14bef5f94c8401} 
+\index{LettersSet::iterator@{LettersSet::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!LettersSet::iterator@{LettersSet::iterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Letters\+Set\+::iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLettersSet_1_1iterator}{iterator}} \&}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador ==. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i,referenecia} & al elemento a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si los dos objetos son iguales 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/letters\+\_\+set.\+h\item 
+src/\mbox{\hyperlink{letters__set_8cpp}{letters\+\_\+set.\+cpp}}\end{DoxyCompactItemize}

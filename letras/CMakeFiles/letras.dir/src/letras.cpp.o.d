@@ -158,12 +158,35 @@ CMakeFiles/letras.dir/src/letras.cpp.o: \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h \
- /usr/include/c++/13/bits/erase_if.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
  /home/aurora/Documentos/ED/letras/./include/letters_bag.h \
  /home/aurora/Documentos/ED/letras/./include/letters_set.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/tuple /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/stdlib.h \
+ /usr/include/c++/13/random /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/limits /usr/include/c++/13/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
+ /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
+ /usr/include/c++/13/bits/stl_numeric.h \
  /home/aurora/Documentos/ED/letras/./include/letters_set.h \
  /home/aurora/Documentos/ED/letras/./include/solver.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \

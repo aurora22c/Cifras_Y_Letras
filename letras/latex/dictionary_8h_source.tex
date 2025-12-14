@@ -1,0 +1,106 @@
+\doxysection{dictionary.\+h}
+\hypertarget{dictionary_8h_source}{}\label{dictionary_8h_source}\index{include/dictionary.h@{include/dictionary.h}}
+\mbox{\hyperlink{dictionary_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *****************************************\ */}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ DICTIONARY\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ DICTIONARY\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDictionary}{Dictionary}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ set<string>\ words;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classDictionary_aee8d612bc9d323c38faba045ba384b8b}{Dictionary}}\ ();}
+\DoxyCodeLine{00032\ \ \ }
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{classDictionary_aa36f24073d9c9001768517aa2322cb82}{\string~Dictionary}}\ ();}
+\DoxyCodeLine{00038\ \ \ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDictionary_a2d54b74d14335da04ad9d64e49536d9a}{clear}}\ ();}
+\DoxyCodeLine{00044\ \ \ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDictionary_ac2456f6eb0cb7f997acc69eac47e2244}{size}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_ab45dc9793957e562ccc104150fc7af8f}{empty}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ \ \ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_a00667b5bf947862dece75bb78171e89c}{exists}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&val);}
+\DoxyCodeLine{00064\ \ \ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_ade0c02d2c1f45e826a87f52c4f1d0ee6}{erase}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&val);}
+\DoxyCodeLine{00072\ \ \ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keyword}{friend}\ istream\ \&\mbox{\hyperlink{classDictionary_a045316b2a6550b776d5b2cb21824827b}{operator\ >>\ }}(istream\ \&is,\ \mbox{\hyperlink{classDictionary}{Dictionary}}\ \&dic);}
+\DoxyCodeLine{00082\ \ \ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keyword}{friend}\ ostream\ \&\mbox{\hyperlink{classDictionary_a558ee41aec5fad2f9ba2071c39cef580}{operator\ <<\ }}(ostream\ \&os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classDictionary}{Dictionary}}\ \&dic);}
+\DoxyCodeLine{00090\ \ \ }
+\DoxyCodeLine{00097\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDictionary_a98251e5b46c3d9be634d77f72c3faa66}{getOccurrences}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ \ \ }
+\DoxyCodeLine{00104\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDictionary_ac3b8bd67f0a45918cfe868e9e62f2322}{getTotalLetters}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ \ \ }
+\DoxyCodeLine{00112\ \ \ vector<string>\ \mbox{\hyperlink{classDictionary_a3f569da8c30009e3ec3f86ba1426dbb7}{getWordsLength}}\ (\textcolor{keywordtype}{int}\ length);}
+\DoxyCodeLine{00113\ \ \ }
+\DoxyCodeLine{00114\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\ \{}
+\DoxyCodeLine{00115\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00116\ \ \ \ \ set<string>::iterator\ it;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ }
+\DoxyCodeLine{00118\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00119\ \ \ \ \ }
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1iterator_a916e7d7bf8d9b5377e16c34726251cbf}{iterator}}\ ();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1iterator_a916e7d7bf8d9b5377e16c34726251cbf}{iterator}}(\textcolor{keyword}{const}\ set<string>::iterator\ \&i);}
+\DoxyCodeLine{00132\ \ \ \ \ }
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\&\ \mbox{\hyperlink{classDictionary_1_1iterator_a8f7658a7438b7dd2812c3985c66c4b10}{operator\ =\ }}(\textcolor{keyword}{const}\ set<string>::iterator\ \&i);}
+\DoxyCodeLine{00139\ \ \ \ \ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_1_1iterator_aafce43b27f9a43758eb6f8ea95a430e5}{operator\ ==\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00146\ \ \ \ \ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_1_1iterator_a18342afd295b728fc8f5a87ff945b243}{operator\ !=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00153\ \ \ \ \ }
+\DoxyCodeLine{00159\ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\&\ \mbox{\hyperlink{classDictionary_1_1iterator_a7f8e75705d9e411d9b31635de60808b4}{operator\ ++\ }}();}
+\DoxyCodeLine{00160\ \ \ \ \ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ \mbox{\hyperlink{classDictionary_1_1iterator_ad8f50671db984422249d2f9570271881}{operator\ *\ }}();}
+\DoxyCodeLine{00166\ \ \ \};}
+\DoxyCodeLine{00167\ \ \ }
+\DoxyCodeLine{00168\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\ \{}
+\DoxyCodeLine{00169\ \ \ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00170\ \ \ \ \ set<string>::const\_iterator\ it;}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ }
+\DoxyCodeLine{00172\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00173\ \ \ }
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1const__iterator_ac5433c42b8731a0dfdcabccad9e2c966}{const\_iterator}}\ ();}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1const__iterator_ac5433c42b8731a0dfdcabccad9e2c966}{const\_iterator}}(\textcolor{keyword}{const}\ set<string>::const\_iterator\ \&i);}
+\DoxyCodeLine{00186\ \ \ \ \ }
+\DoxyCodeLine{00192\ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\&\ \mbox{\hyperlink{classDictionary_1_1const__iterator_a4615838c375620babba7b28f2cda85a9}{operator\ =\ }}(\textcolor{keyword}{const}\ set<string>::const\_iterator\ \&i);}
+\DoxyCodeLine{00193\ \ \ \ \ }
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_1_1const__iterator_a215c9e66c2bf3140c2eaa99430d9b9f9}{operator\ ==\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00200\ \ \ \ \ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDictionary_1_1const__iterator_ac58cd8fc9aa05d9f174ea106dc299b9c}{operator\ !=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00207\ \ \ \ \ }
+\DoxyCodeLine{00213\ \ \ \ \ \mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\&\ \mbox{\hyperlink{classDictionary_1_1const__iterator_a6fa4f13086fa5fede13a2d4c6113fef6}{operator\ ++\ }}();}
+\DoxyCodeLine{00214\ \ \ \ \ }
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ \mbox{\hyperlink{classDictionary_1_1const__iterator_adf205911347fcc5089423012d8bf949b}{operator\ *\ }}();\ }
+\DoxyCodeLine{00220\ \ \ \};}
+\DoxyCodeLine{00221\ \ \ }
+\DoxyCodeLine{00228\ \ \ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\ \mbox{\hyperlink{classDictionary_a7dd069387999c1bfc4ecc5ee5c223752}{find}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&w);}
+\DoxyCodeLine{00229\ \ \ }
+\DoxyCodeLine{00237\ \ \ pair<iterator,\ bool>\ \mbox{\hyperlink{classDictionary_ab1e048b573361d39bf16c3ae3a627ce4}{insert}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&val);}
+\DoxyCodeLine{00238\ \ \ }
+\DoxyCodeLine{00246\ \ \ pair<iterator,\ iterator>\ \mbox{\hyperlink{classDictionary_ad875fb4832044ca3518bb373acb8f62a}{range\_prefix}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&val);}
+\DoxyCodeLine{00247\ \ \ }
+\DoxyCodeLine{00252\ \ \ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\ \mbox{\hyperlink{classDictionary_a574468b2073aa0198a458715fe0e7791}{begin}}\ ();}
+\DoxyCodeLine{00253\ \ \ }
+\DoxyCodeLine{00259\ \ \ \mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classDictionary_a574468b2073aa0198a458715fe0e7791}{begin}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00260\ \ \ }
+\DoxyCodeLine{00265\ \ \ \mbox{\hyperlink{classDictionary_1_1iterator}{iterator}}\ \mbox{\hyperlink{classDictionary_a78307ae7b05370023477c53821424d3d}{end}}\ ();}
+\DoxyCodeLine{00266\ \ \ }
+\DoxyCodeLine{00272\ \ \ \mbox{\hyperlink{classDictionary_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classDictionary_a78307ae7b05370023477c53821424d3d}{end}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00273\ \};}
+\DoxyCodeLine{00274\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//DICTIONARY\_H}}
+
+\end{DoxyCode}

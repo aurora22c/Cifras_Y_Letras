@@ -1,0 +1,105 @@
+\doxysection{letters\+\_\+bag.\+h}
+\hypertarget{letters__bag_8h_source}{}\label{letters__bag_8h_source}\index{include/letters\_bag.h@{include/letters\_bag.h}}
+\mbox{\hyperlink{letters__bag_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ *****************************************\ */}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ \_\_LETTERS\_BAG\_H\_\_}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ \_\_LETTERS\_BAG\_H\_\_}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}letters\_set.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLettersBag}{LettersBag}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ vector<char>\ letters;\ \ \ \ \ \ \ \textcolor{comment}{//\ Contiene\ las\ letras\ }}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ vector<char>::iterator\ it;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1iterator_a6ba2b535b6e55e981987888118eaa44b}{iterator}}\ ();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1iterator_a6ba2b535b6e55e981987888118eaa44b}{iterator}}(\textcolor{keyword}{const}\ vector<char>::iterator\ \&i);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\&\ \mbox{\hyperlink{classLettersBag_1_1iterator_aed96db5b9001750876ac08187863c754}{operator\ =\ }}(\textcolor{keyword}{const}\ vector<char>::iterator\ \&i);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLettersBag_1_1iterator_a33a131ab8b22b4faf633e63ff5de17c0}{operator\ ==\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLettersBag_1_1iterator_a336a820087e278ca95c5cdfbf8cb986c}{operator\ !=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\&\ \mbox{\hyperlink{classLettersBag_1_1iterator_abc4dfc527111d3e367cce56f2cc10ad2}{operator\ ++\ }}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ \&\ \mbox{\hyperlink{classLettersBag_1_1iterator_a7839457b8dc5a39d2d8f6700bc1dede9}{operator\ *\ }}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \};\ \textcolor{comment}{//\ class\ iterator}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ vector<char>::const\_iterator\ it;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1const__iterator_ae85d7f03afdca556d8eece24aba89ff5}{const\_iterator}}\ ();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1const__iterator_ae85d7f03afdca556d8eece24aba89ff5}{const\_iterator}}(\textcolor{keyword}{const}\ vector<char>::const\_iterator\ \&i);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\&\ \mbox{\hyperlink{classLettersBag_1_1const__iterator_a62d3075a85a6ed6ef90db9f355726e9f}{operator\ =\ }}(\textcolor{keyword}{const}\ vector<char>::const\_iterator\ \&i);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLettersBag_1_1const__iterator_a31d7ccd6e0365d1460d6eeda7eaee344}{operator\ ==\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLettersBag_1_1const__iterator_a0da407ed413d7f6548106b5c1c4a857e}{operator\ !=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\ \&i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\&\ \mbox{\hyperlink{classLettersBag_1_1const__iterator_aac9868f0894afb76031538cacd04c52a}{operator\ ++\ }}();}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ \&\ \mbox{\hyperlink{classLettersBag_1_1const__iterator_ab4c9ced40b8426d4b5d219be7d860a73}{operator\ *\ }}();\ }
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \};\ \textcolor{comment}{//\ Class\ const\_iterator}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{classLettersBag_adfb7af3b1ffc3d545891e07f3df4fb9a}{LettersBag}}();}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \ \ \mbox{\hyperlink{classLettersBag_a43b3f7eb1877aa9a0816055a9f677d34}{\string~LettersBag}}\ ();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \ \ \ \ \mbox{\hyperlink{classLettersBag_adfb7af3b1ffc3d545891e07f3df4fb9a}{LettersBag}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLettersSet}{LettersSet}}\ \&\ letterSet);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classLettersBag_a64eb87aa50f1903c52681e38557d1cda}{extractLetter}}();}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00174\ \ \ \ \ vector<char>\ \mbox{\hyperlink{classLettersBag_af7e58ec96acdf06049c74e6e00084d9b}{extractLetters}}(\textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLettersBag_a9bbedde95f64bbf687bc471b37152e26}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLettersBag_a35f9f8740db6bd3c17e3f3b556663478}{insert}}(\textcolor{keywordtype}{char}\ letter);}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLettersBag_a306aef49393b6966012e09f7e8db1f32}{erase}}(\textcolor{keywordtype}{char}\ letter);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLettersBag_a40ec6d59bb0722954c7f9e5609d93895}{clear}}();}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00206\ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\ \mbox{\hyperlink{classLettersBag_a16534d884c5577213071cf0a0fc05ae2}{begin}}();}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00213\ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classLettersBag_a16534d884c5577213071cf0a0fc05ae2}{begin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00219\ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1iterator}{iterator}}\ \mbox{\hyperlink{classLettersBag_a10dcc2b87a8a43e92792ab47de0b1743}{end}}();}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{classLettersBag_1_1const__iterator}{const\_iterator}}\ \mbox{\hyperlink{classLettersBag_a10dcc2b87a8a43e92792ab47de0b1743}{end}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \};}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_LETTERS\_BAG\_H\_\_}}
+
+\end{DoxyCode}
