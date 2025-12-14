@@ -1,0 +1,62 @@
+\doxysection{/home/aurora/\+Documentos/\+LETRAS\+\_\+\+Y\+\_\+\+CIFRAS/letras/src/dictionary.cpp File Reference}
+\hypertarget{dictionary_8cpp}{}\label{dictionary_8cpp}\index{/home/aurora/Documentos/LETRAS\_Y\_CIFRAS/letras/src/dictionary.cpp@{/home/aurora/Documentos/LETRAS\_Y\_CIFRAS/letras/src/dictionary.cpp}}
+
+
+Archivo de implementación del TDA \doxylink{classDictionary}{Dictionary}.  
+
+
+{\ttfamily \#include "{}dictionary.\+h"{}}\newline
+Include dependency graph for dictionary.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{dictionary_8cpp_a045316b2a6550b776d5b2cb21824827b}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{classDictionary}{Dictionary}} \&dic)
+\item 
+ostream \& \mbox{\hyperlink{dictionary_8cpp_a558ee41aec5fad2f9ba2071c39cef580}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classDictionary}{Dictionary}} \&dic)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Archivo de implementación del TDA \doxylink{classDictionary}{Dictionary}. 
+
+\begin{DoxyAuthor}{Author}
+Aurora Casanova García 
+
+Andrés López Baena 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{dictionary_8cpp_a558ee41aec5fad2f9ba2071c39cef580}\label{dictionary_8cpp_a558ee41aec5fad2f9ba2071c39cef580} 
+\index{dictionary.cpp@{dictionary.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!dictionary.cpp@{dictionary.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classDictionary}{Dictionary}} \&}]{dic }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & referencia del flujo de salida \\
+\hline
+{\em dic} & referencia del objeto dicctionary \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El flujo de salida 
+\end{DoxyReturn}
+\Hypertarget{dictionary_8cpp_a045316b2a6550b776d5b2cb21824827b}\label{dictionary_8cpp_a045316b2a6550b776d5b2cb21824827b} 
+\index{dictionary.cpp@{dictionary.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!dictionary.cpp@{dictionary.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{classDictionary}{Dictionary}} \&}]{dic }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & referencia del flujo de entrada \\
+\hline
+{\em dic} & referencia del objeto dicctionary \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El flujo de entrada @doc Inicializa el diccionario con los elementos que hay en is 
+\end{DoxyReturn}

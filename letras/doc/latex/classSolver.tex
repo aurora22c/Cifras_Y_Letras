@@ -1,0 +1,83 @@
+\doxysection{Solver Class Reference}
+\hypertarget{classSolver}{}\label{classSolver}\index{Solver@{Solver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSolver_ad62da3982412af825c13fe8b78c6c055}{Solver}} (\mbox{\hyperlink{classDictionary}{Dictionary}} d, \mbox{\hyperlink{classLettersSet}{Letters\+Set}} ls)
+\begin{DoxyCompactList}\small\item\em Constuctor con parámetros. \end{DoxyCompactList}\item 
+\Hypertarget{classSolver_aba52d3c92fafceb6fe39f937f2d73db3}\label{classSolver_aba52d3c92fafceb6fe39f937f2d73db3} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Solver} ()
+\begin{DoxyCompactList}\small\item\em Destructor @doc Destruye objeto de la clase \doxylink{classSolver}{Solver}. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classSolver_ada0d3ddf9fac9d6ad8d543717fd59bfa}{get\+Solutions}} (const vector$<$ char $>$ \&available\+\_\+letters, bool score\+\_\+game)
+\begin{DoxyCompactList}\small\item\em Obtiene las posibles soluciones a partir de un conjunto de letras. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSolver_afd55107db7b831a8d7632691d345088e}{build\+Word}} (vector$<$ char $>$ available\+\_\+letters, string w)
+\begin{DoxyCompactList}\small\item\em Comprueba si una palabra puede construirse con las letras disponibles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSolver_ad62da3982412af825c13fe8b78c6c055}\label{classSolver_ad62da3982412af825c13fe8b78c6c055} 
+\index{Solver@{Solver}!Solver@{Solver}}
+\index{Solver@{Solver}!Solver@{Solver}}
+\doxysubsubsection{\texorpdfstring{Solver()}{Solver()}}
+{\footnotesize\ttfamily Solver\+::\+Solver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDictionary}{Dictionary}}}]{d,  }\item[{\mbox{\hyperlink{classLettersSet}{Letters\+Set}}}]{ls }\end{DoxyParamCaption})}
+
+
+
+Constuctor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & diccionario que contiene las palabras válidas del juego \\
+\hline
+{\em ls} & conjunto de letras @doc Crea un nuevo objeto de la clase \doxylink{classSolver}{Solver} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSolver_afd55107db7b831a8d7632691d345088e}\label{classSolver_afd55107db7b831a8d7632691d345088e} 
+\index{Solver@{Solver}!buildWord@{buildWord}}
+\index{buildWord@{buildWord}!Solver@{Solver}}
+\doxysubsubsection{\texorpdfstring{buildWord()}{buildWord()}}
+{\footnotesize\ttfamily bool Solver\+::build\+Word (\begin{DoxyParamCaption}\item[{vector$<$ char $>$}]{available\+\_\+letters,  }\item[{string}]{w }\end{DoxyParamCaption})}
+
+
+
+Comprueba si una palabra puede construirse con las letras disponibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+\_\+letters} & vector con las letras disponibles \\
+\hline
+{\em w} & palabra que se quiere construir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la puede puede construirse, false en caso contrario 
+\end{DoxyReturn}
+\Hypertarget{classSolver_ada0d3ddf9fac9d6ad8d543717fd59bfa}\label{classSolver_ada0d3ddf9fac9d6ad8d543717fd59bfa} 
+\index{Solver@{Solver}!getSolutions@{getSolutions}}
+\index{getSolutions@{getSolutions}!Solver@{Solver}}
+\doxysubsubsection{\texorpdfstring{getSolutions()}{getSolutions()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Solver\+::get\+Solutions (\begin{DoxyParamCaption}\item[{const vector$<$ char $>$ \&}]{available\+\_\+letters,  }\item[{bool}]{score\+\_\+game }\end{DoxyParamCaption})}
+
+
+
+Obtiene las posibles soluciones a partir de un conjunto de letras. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+\_\+letters} & vector con las letras disponibles para formar palabras \\
+\hline
+{\em score\+\_\+game} & índica el modo de juego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Genera todas las palabras válidas que pueden formarse con las letras disponibles y devuelve aquellas que tengan mayor puntuación o longitud, dependiendo del modo de juego 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/aurora/\+Documentos/\+LETRAS\+\_\+\+Y\+\_\+\+CIFRAS/letras/include/\mbox{\hyperlink{solver_8h}{solver.\+h}}\item 
+/home/aurora/\+Documentos/\+LETRAS\+\_\+\+Y\+\_\+\+CIFRAS/letras/src/\mbox{\hyperlink{solver_8cpp}{solver.\+cpp}}\end{DoxyCompactItemize}
