@@ -1,3 +1,5 @@
+LETRAS
+
 La parte que he hecho yo, Andrés, se corresponde solo a varios archivos de la
 parte de letras, mas concretamente letras.cpp, letters_set y letters_bag.
 
@@ -78,3 +80,28 @@ que se muestre por parte del juego.
 
 Al final se le preguntará si quiere volver a jugar con las mismas normas.
 
+
+
+La parte de Letras, implementada por Aurora Casanova García, contiene los 
+archivos dictionary.h, dictionary.cpp, solver.h, solver.cpp y cantidad_letras.cpp.
+
+El archivo dictionary.h contiene la declaración del TDA Dictionary, en el que
+decidí usar un vector de string para guardar las palabras, ya que su objetivo 
+es guardar todas las palabras que se le pasen mediante el operador >> y a su
+sencillez y comodidad de uso. Consta de funciones básicas y de dos clases de
+iteradores, iterator y const_iterator (la versión constante del primero).
+
+En cuanto a solver.h y solver.cpp nos encontramos con el TDA Solver que 
+afronta la tarea de buscar las mejores soluciones para el juego dado un
+conjunto de letras. Tiene como atributos un objeto de la clase Dictionary y 
+otro de la clase LettersSet. Sus métodos más importantes son getSolutions,
+el cual devuelve un vector con las palabras que son mejor solución para
+el tipo de juego y el conjunto de letras dadas, y buildWord, que comprueba
+si una palabra se puede formar con el conjunto de letras dado.
+
+Por último, cantidad_letras.cpp es un programa al que se le pasan como 
+argumentos un diccionario y un archivo de letras, con la información aportada
+calcula para cada letra del archivo las veces que se repite en el diccionario
+y teniendo en cuenta su proporción, y la de las demás letras, le da a cada una
+una puntuación dependiendo de su rareza. Todo esto se muestra en un archivo
+de salida que también se debe pasar como argumento.
