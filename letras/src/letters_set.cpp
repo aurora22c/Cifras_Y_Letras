@@ -55,32 +55,28 @@ pair<LettersSet::iterator, bool> LettersSet :: insert(char c, const LetterInfo &
 
 LettersSet :: iterator LettersSet :: begin ()
 {
-	LettersSet::iterator i;
-	i = charSet.begin();
+	LettersSet::iterator i ( charSet.begin() );
 	
 	return i;
 }
 
 LettersSet :: const_iterator LettersSet :: begin () const
 {
-	LettersSet::const_iterator i;
-	i = charSet.cbegin();
+	LettersSet::const_iterator i ( charSet.cbegin() );
 	
 	return i;
 }
 
 LettersSet :: iterator LettersSet :: end ()
 {
-	LettersSet::iterator i;
-	i = charSet.end();
+	LettersSet::iterator i ( charSet.end() );
 	
 	return i;
 }
 
 LettersSet :: const_iterator LettersSet :: end () const
 {
-	LettersSet::const_iterator i;
-	i = charSet.cend();
+	LettersSet::const_iterator i ( charSet.cend() );
 	
 	return i;
 }

@@ -1,4 +1,13 @@
+/* ***************************************** */
+/**
+* @file   solver.cpp
+* @brief  Archivo de implementación del TDA Solver
+* @author Aurora Casanova García
+*		     	Andrés López Baena
+*/
+
 #include <cctype>
+
 #include "solver.h"
 
 using namespace std;
@@ -14,18 +23,34 @@ Solver :: ~Solver()
 
 vector<string> Solver :: getSolutions (const vector<char> & available_letters, bool score_game)
 {
-	vector<char> letras;
+	vector<string> solver;
+	int max_score = 0;
 	
-	// Es necesario pasarlas a minúscula porque en el diccionario
-	// tratamos todas la letras de está forma y si comparamos no 
-	// funcionaría
-	for (int i = 0; i < available_letters.size(); i++)
-		letras.push_back( tolower( available_letters[i] ) ) ;
+	for (auto it = dictionary.begin(); it != dictionary.end(); ++it) {
+		string w = *it;
+		
+		bool exis = buildWord (available_letters, w);
+		
+		if (exis) {
+			int score;
+			
+			if (score_game)
+				score = letters_set.score(w);
+			else
+				score = w.size();
+			
+			if (max_score < score) {
+				max_score = score;
+				solver.clear();
+				solver.push_back(w);
+			} else if (max_score == score)
+				solver.push_back(w);
+								
+		}
+				
+	}
 	
-	if (score_game)
-		return getSolutionsScore(letras);
-	else 
-		return getSolutionsLength(letras);
+	return solver;
 }
 
 bool Solver :: buildWord (vector<char> available_letters, string w)
@@ -54,59 +79,4 @@ bool Solver :: buildWord (vector<char> available_letters, string w)
 	}
 	
 	return true;
-}
-
-vector<string> Solver :: getSolutionsScore (const vector<char> & available_letters)
-{
-	vector<string> solver;
-	int max_score = 0;
-	
-	for (auto it = dictionary.begin(); it != dictionary.end(); ++it) {
-		string w = *it;
-		
-		bool exis = buildWord (available_letters, w);
-		
-		if (exis) {
-			// No se si está bien
-			int score = letters_set.score(w);
-			
-			if (max_score < score) {
-				max_score = score;
-				solver.clear();
-				solver.push_back(w);
-			} else if (max_score == score)
-				solver.push_back(w);
-								
-		}
-				
-	}
-	
-	return solver;
-}
-
-vector<string> Solver :: getSolutionsLength (const vector<char> & available_letters)
-{
-	vector<string> solver;
-	int max_length = 0;
-	
-	for (auto it = dictionary.begin(); it != dictionary.end(); ++it) {
-		string w = *it;
-		
-		bool exis = buildWord (available_letters, w);
-		
-		if (exis) {
-			int length = w.size();
-			
-			if (max_length < length) {
-				max_length = length;
-				solver.clear();
-				solver.push_back(w);
-			} else if (max_length == length)
-				solver.push_back(w);
-								
-		}
-				
-	}
-	
-	return solver;
 }

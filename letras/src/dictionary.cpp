@@ -168,8 +168,7 @@ const string & Dictionary :: const_iterator :: operator * ()
 
 Dictionary :: iterator Dictionary :: find (const string &w)
 {
-	Dictionary::iterator i;
-	i = words.find(w);
+	Dictionary::iterator i ( words.find(w) );
 	
 	return i;
 }
@@ -177,8 +176,7 @@ Dictionary :: iterator Dictionary :: find (const string &w)
 pair<Dictionary :: iterator, bool> Dictionary :: insert (const string &val) {
 	auto res = words.insert(val);
 	
-	Dictionary::iterator i;
-	i = res.first;
+	Dictionary::iterator i (res.first);
 
 	return {i, res.second};
 }
@@ -195,32 +193,28 @@ pair<Dictionary :: iterator,Dictionary :: iterator> Dictionary :: range_prefix (
 
 Dictionary :: iterator Dictionary :: begin ()
 {
-	Dictionary::iterator i;
-	i = words.begin();
+	Dictionary::iterator i ( words.begin() );
 	
 	return i;
 }
 
 Dictionary :: const_iterator Dictionary :: begin () const
 {
-	Dictionary::const_iterator i;
-	i = words.cbegin();
+	Dictionary::const_iterator i ( words.cbegin() );
 	
 	return i;
 }
 
 Dictionary :: iterator Dictionary :: end ()
 {
-	Dictionary::iterator i;
-	i = words.end();
+	Dictionary::iterator i ( words.end() );
 	
 	return i;
 }
 
 Dictionary :: const_iterator Dictionary :: end () const
 {
-	Dictionary::const_iterator i;
-	i = words.cend();
+	Dictionary::const_iterator i ( words.cend() );
 	
 	return i;
 }

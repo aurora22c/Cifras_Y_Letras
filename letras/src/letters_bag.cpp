@@ -81,32 +81,28 @@ void LettersBag::clear(){
 
 LettersBag :: iterator LettersBag :: begin ()
 {
-	LettersBag::iterator i;
-	i = letters.begin();
+	LettersBag::iterator i ( letters.begin() );
 	
 	return i;
 }
 
 LettersBag :: const_iterator LettersBag :: begin () const
 {
-	LettersBag::const_iterator i;
-	i = letters.cbegin();
+	LettersBag::const_iterator i ( letters.cbegin() );
 	
 	return i;
 }
 
 LettersBag :: iterator LettersBag :: end ()
 {
-	LettersBag::iterator i;
-	i = letters.end();
+	LettersBag::iterator i ( letters.end() );
 	
 	return i;
 }
 
 LettersBag :: const_iterator LettersBag :: end () const
 {
-	LettersBag::const_iterator i;
-	i = letters.cend();
+	LettersBag::const_iterator i ( letters.cend() );
 	
 	return i;
 }

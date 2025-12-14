@@ -51,8 +51,6 @@ public:
 	vector<string> getSolutions (const vector<char> & available_letters, 
 										  bool score_game);
 
-private:
-
 	/**
 		* @brief  Comprueba si una palabra puede construirse con las letras
 		*			 disponibles
@@ -62,20 +60,6 @@ private:
 		*			 false en caso contrario
 	**/
 	bool buildWord (vector<char> available_letters, string w);
-	
-	/**
-		* @brief  Obtiene las soluciones priorizando la puntuación
-		* @param  available_letters, vector con las letras disponibles 
-		* @return Vector con las palabras que tienen la máxima puntuación posible
-	**/
-	vector<string> getSolutionsScore (const vector<char> & available_letters);
-	
-	/**
-		* @brief  Obtiene las soluciones priorizando la longitud de las palabras
-		* @param  available_letters, vector con las letras disponibles 
-		* @return Vector con las palabras que tienen la máxima longitud posible
-	**/
-	vector<string> getSolutionsLength (const vector<char> & available_letters);
 };
 
 #endif // __SOLVER_H__
