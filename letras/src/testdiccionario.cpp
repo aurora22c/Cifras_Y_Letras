@@ -1,3 +1,11 @@
+/* ***************************************** */
+/**
+* @file   testdiccionario.cpp
+* @brief  Archivo de prueba del TDA Dictionary
+* @author Aurora Casanova García
+* @author Andrés López Baena
+*/
+
 #include <fstream>
 #include <iostream>
 

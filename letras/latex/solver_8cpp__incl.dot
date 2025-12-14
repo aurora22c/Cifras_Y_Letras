@@ -16,7 +16,7 @@ digraph "src/solver.cpp"
   Node3 -> Node6 [id="edge20_Node000003_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="vector",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node3 -> Node7 [id="edge21_Node000003_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="letters_set.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$letters__set_8h_source.html",tooltip=" "];
+  Node7 [id="Node000007",label="letters_set.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$letters__set_8h.html",tooltip="Archivo de definición del TDA LettersSet."];
   Node7 -> Node8 [id="edge22_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="iostream",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node7 -> Node9 [id="edge23_Node000007_Node000009",color="steelblue1",style="solid",tooltip=" "];

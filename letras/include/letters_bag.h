@@ -3,7 +3,7 @@
 * @file   letters_bag.h
 * @brief  Archivo de implementación del TDA LettersBag
 * @author Aurora Casanova García
-*	  Andrés López Baena
+* @author Andrés López Baena
 */
 
 

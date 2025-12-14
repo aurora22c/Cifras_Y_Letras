@@ -3,7 +3,7 @@
 * @file   letters_set.cpp
 * @brief  Archivo de implementación del TDA LettersSet
 * @author Aurora Casanova García
-*	  Andrés López Baena
+* @author Andrés López Baena
 */
 
 #include "letters_set.h"

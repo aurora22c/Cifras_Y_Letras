@@ -1,0 +1,30 @@
+\doxysection{src/cantidad\+\_\+letras.cpp File Reference}
+\hypertarget{cantidad__letras_8cpp}{}\label{cantidad__letras_8cpp}\index{src/cantidad\_letras.cpp@{src/cantidad\_letras.cpp}}
+
+
+Archivo de prueba del TDA \doxylink{classDictionary}{Dictionary} y \doxylink{classLettersSet}{Letters\+Set}.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include "{}dictionary.\+h"{}}\newline
+{\ttfamily \#include "{}letters\+\_\+set.\+h"{}}\newline
+Include dependency graph for cantidad\+\_\+letras.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{cantidad__letras_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{cantidad__letras_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int {\bfseries main} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Archivo de prueba del TDA \doxylink{classDictionary}{Dictionary} y \doxylink{classLettersSet}{Letters\+Set}. 
+
+\begin{DoxyAuthor}{Author}
+Aurora Casanova García 
+
+Andrés López Baena 
+\end{DoxyAuthor}

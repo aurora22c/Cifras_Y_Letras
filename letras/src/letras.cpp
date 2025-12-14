@@ -1,3 +1,11 @@
+/* ***************************************** */
+/**
+* @file   letras.cpp
+* @brief  Archivo de prueba final
+* @author Aurora Casanova García
+* @author Andrés López Baena
+*/
+
 #include <iostream>
 #include <fstream>
 #include <vector>

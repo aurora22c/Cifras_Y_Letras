@@ -1,25 +1,21 @@
+/* ***************************************** */
+/**
+* @file   cifras.cpp
+* @brief  Archivo de prueba final
+* @author Aurora Casanova García
+* @author Andrés López Baena
+*/
+
 #include <iostream>
-#include <vector>
-#include <set>
 #include <cmath>
 #include <climits>
 #include <cstdlib>
 #include <ctime>
 #include <sstream>
 
-#include "operations.h"
+#include "cifras.h"
 
 using namespace std;
-
-const vector<int> C = {1,2,3,4,5,6,7,8,9,10,25,50,75,100};
-
-multiset<int> digitsBag ();
-
-void Cifras (multiset<int> S, int objetivo, Operations actual, Operations & best);
-
-vector<Operations> GeneraOperaciones (Operations actual, int n);
-
-int AnalizaRespuesta (string operaciones, multiset<int> S);
 
 int main(int argc, char *argv[])
 {
@@ -81,7 +77,7 @@ multiset<int> digitsBag ()
 	int tam = C.size();
 	srand (time(0));
 	
-	for (int i = 0; i < 6; i++)
+	for (int i = 0; i < TAM; i++)
 		d.insert( C[ rand() % tam ] );
 		
 	return d;

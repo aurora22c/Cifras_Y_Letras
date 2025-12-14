@@ -1,9 +1,9 @@
 /* ***************************************** */
 /**
-* @file   letters_set.cpp
+* @file   letters_set.h
 * @brief  Archivo de definición del TDA LettersSet
 * @author Aurora Casanova García
-*	  Andrés López Baena
+* @author Andrés López Baena
 */
 
 #ifndef __LETTER_SET_H__

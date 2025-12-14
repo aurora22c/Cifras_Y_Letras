@@ -3,7 +3,7 @@
 * @file   dictionary.cpp
 * @brief  Archivo de implementación del TDA Dictionary
 * @author Aurora Casanova García
-*	  Andrés López Baena
+* @author Andrés López Baena
 */
 
 #include "dictionary.h"

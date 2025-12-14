@@ -1,9 +1,9 @@
  /* ***************************************** */
  /**
  * @file   operations.h
- * @brief  Archivo de definición del TDA operations
+ * @brief  Archivo de definición del TDA Operations
  * @author Aurora Casanova García
- *		     Andrés López Baena
+ * @author Andrés López Baena
  */
 
 
